@@ -17,7 +17,10 @@ const typeDefs = gql`
         email: String!
         password: String!
     }
-    type Query {}
+    type Query {
+        books: [Book]
+        users:(_id: String) [User]
+    }
     type Mutation {}
 
 `;
