@@ -83,7 +83,7 @@ const resolvers = {
           console.log(err);
         }
       }
-      throw new AuthenticationError("You need to be logged in!");
+      throw new AuthenticationError("Unable to save book");
     },
 
     removeBook: async (parent, args, context) => {
@@ -99,7 +99,7 @@ const resolvers = {
           console.log(err);
         }
       }
-      throw new AuthenticationError("You need to be logged in!");
+      throw new AuthenticationError("Unable to delete book");
     },
   },
 };
