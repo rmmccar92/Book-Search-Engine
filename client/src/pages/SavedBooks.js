@@ -20,6 +20,10 @@ const SavedBooks = () => {
   const [removeBook] = useMutation(REMOVE_BOOK);
   const userData = data?.me || [];
 
+  if (!userData?.username) {
+    return <h1>No Saved Books Yet!</h1>;
+  }
+
   // use this to determine if `useEffect()` hook needs to run again
   // const userDataLength = Object.keys(userData).length;
 
@@ -58,7 +62,7 @@ const SavedBooks = () => {
 
     try {
       await removeBook({
-        variables: { bookId: bookId },
+        variables: { bookId },
       });
 
       // if (!response.ok) {
