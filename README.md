@@ -30,7 +30,7 @@ The User must login and then books can be saved to their account. To view the sa
 
 ## Demo
 
-[Demo Gif](https://github.com/rmmccar92/Book-Search-Engine/blob/main/assets/BSEdemo.gif)
+![Demo Gif](https://github.com/rmmccar92/Book-Search-Engine/blob/main/assets/BSEdemo.gif)
 
 ## Links
 
